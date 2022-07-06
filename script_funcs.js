@@ -19,5 +19,4 @@ function ativar(){
     
     alert("O xp doado ao Manancial será " + (xp_doado(expD,n)).toFixed(0));
     alert("O xp q o Deus Da MOrte receberá será " + (resultado(expD , expM , n)).toFixed(0));
-
 }
