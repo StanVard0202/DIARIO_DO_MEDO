@@ -1,15 +1,88 @@
+:root{
+    --branco: rgba(230, 230, 230,1);
+    --preto: #1b1b1b;   
+}
+
 body{
+    user-select: none;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("transferir.jpg");
 }
 
+p#copyright{
+    color: rgba(230, 230, 230,.5);
+    position: absolute;
+    right: 10px;
+    top: 96%;
+}
+
 h1{
-    color:white;
+    text-align: center;
+    font-size: 5em;
+    color: var(--branco);
+}
+
+.grid-container{
+    display: grid;
+    row-gap: 15px;
+    column-gap: 15px;
 }
 
 button{
-    border: 2px solid white;
-    background-color: black;
-    color:white
+    width: 25em;
+    height: 2em;
+    font-size: 1.5em;
+    padding: none;
+    border: .2em solid var(--branco);
+    background-color: var(--preto);
+    border-radius: .5em;
+    color:var(--branco);
 }
+
+button#disabled, button#disabled:hover{
+    pointer-events: none;
+}
+
+button:hover{
+    background-color: #000;
+}
+
+.grid-item-1{
+    grid-area: 1 / 1;
+}
+
+.grid-item-2{
+    grid-area: 1 / 2;
+}
+
+.grid-item-3{
+    grid-area: 1 / 3;
+}
+
+.grid-item-4{
+    grid-area: 2 / 1;
+}
+
+.grid-item-5{
+    grid-area: 2 / 2;
+}
+
+.grid-item-6{
+    grid-area: 2 / 3;
+}
+
+.grid-item-7{
+    grid-area: 3 / 1;
+}
+
+.grid-item-8{
+    grid-area: 3 / 2;
+}
+
+.grid-item-9{
+    grid-area: 3 / 3;
+}
+
+
+
